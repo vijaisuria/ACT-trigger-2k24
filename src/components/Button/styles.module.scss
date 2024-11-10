@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     gap: 0.25rem;
-    background-color: var(--color-primary);
+    background-color: var(--color-bg);
     color: var(--color-light);
     font-size: 1.15rem;
     font-weight: 500;
@@ -17,7 +17,7 @@
 }
 
 .button:hover {
-    background-color: var(--color-accent);
+    background-color: var(--color-background);
 }
 
 .button img {
