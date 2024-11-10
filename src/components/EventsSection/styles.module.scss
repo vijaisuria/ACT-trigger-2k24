@@ -22,10 +22,26 @@
     flex-direction: column;
     transition: 0.2s all var(--animation-ease);
     cursor: pointer;
+    animation: rise 0.6s ease forwards; /* Adds the rise animation */
+    opacity: 0; /* Initial opacity for animation */
+}
+
+@keyframes rise {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Starts slightly below */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Ends at normal position */
+    }
 }
 
 .card:hover {
-    background-color: rgba(232, 234, 237, 1);
+    background-color: rgb(138, 108, 158);;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    transform: translateY(-5px) ; /* Slight lift effect */
+    box-shadow: 0 20px 16px rgba(2, 151, 250, 0.1);
 }
 
 .card .body {
@@ -45,21 +61,21 @@
     display: block;
     font-size: 0.8rem;
     background-color: rgba(95, 116, 147, 0.2);
-    color: var(--color-primary);
+    color: var(--color-black);
     padding: 0.15rem 1rem;
     border-radius: 100px;
     width: fit-content;
 }
 
 .card .body h2 {
-    color: var(--color-black);
+    color: var(--color-bg);
 }
 
 .card .body p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 300;
     text-align: justify;
-    color: var(--color-dark);
+    color: var(--color-light);
 }
 
 .card .actions {
@@ -105,4 +121,78 @@
     .events_section .grid {
         grid-template-columns: 1fr;
     }
+}
+.events_section {
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 1rem;
+}
+
+.nav_item {
+    background-color: rgba(49, 30, 102, 0.5);
+    border: 1px solid #FFFFFF;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color:#FFFFFF;
+}
+
+.nav_item:hover {
+    background-color: transparent;
+    color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 20px 16px rgba(2, 151, 250, 0.1);
+}
+
+.active {
+    background-color: #684f9a;
+    color: white;
+    font-weight: bold;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.body {
+    margin-bottom: 10px;
+}
+
+.tags {
+    margin: 10px 0;
+}
+
+.actions {
+    text-align: center;
+}
+
+.button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: #0056b3;
 }

@@ -1,8 +1,14 @@
 .footer {
-    background-color: var(--color-primary);
+    background: radial-gradient(circle, var(--color-s), var(--color-e));
+    animation:radial-transition 5s infinite alternate;
+    animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
     color: var(--color-light);
     padding: 2rem 2rem;
     display: flex;
+}
+:root {
+    --color-s: #201334; 
+    --color-e: #161B22; 
 }
 
 .footer .left {

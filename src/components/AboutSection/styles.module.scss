@@ -8,6 +8,17 @@
     animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
+@keyframes tumble {
+    0% {
+        opacity: 0;
+        transform: rotate(-360deg) translateY(-100px); /* Starts off-screen and fully rotated */
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(0) translateY(0); /* Ends in the normal position */
+    }
+}
+
 /* Define your colors in :root if not already done */
 :root {
     --color-start: #3f157e; /* Dark grayish-blue */

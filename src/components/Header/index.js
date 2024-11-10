@@ -1,9 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./styles.module.scss";
-import ACT from "../../assets/ACT.png"
-import MIT from "../../assets/MIT.png";
-import AU from "../../assets/AU.png";
+import TRIGGER from "../../assets/TRIGGER.png"
+
 
 const Header = (props) => {
     const navigate = useNavigate();
@@ -13,8 +12,8 @@ const Header = (props) => {
 
         const listiner = (e) => {
             if (window.scrollY > 50) {
-                header.style.backgroundColor = "var(--color-white)";
-                header.style.boxShadow = "rgba(107, 114, 142, 0.5) 0px 0px 10px 0px";
+                header.style.backgroundColor = "transparent";
+                header.style.boxShadow = "";
             } else {
                 header.style.backgroundColor = "transparent"
                 header.style.boxShadow = "";
@@ -41,8 +40,8 @@ const Header = (props) => {
     return (
         <header id="header" className={styles.header}>
             <div className={[styles.logo, styles.AU_MIT].join(" ")} onClick={() => navigate("/")}>
-                <img src={AU}  alt="AU"/>
-                <img src={MIT} alt="MIT"/>
+                <img src={TRIGGER}  alt="TRIGGER 2024"/>
+               
             </div>
 
             {
@@ -72,9 +71,7 @@ const Header = (props) => {
                 </React.Fragment>
             }
             
-            <div className={[styles.logo, styles.ACT].join(" ")} onClick={() => navigate("/")}>
-                <img src={ACT} alt="ACT"/>
-            </div>
+           
         </header>
     );
 }

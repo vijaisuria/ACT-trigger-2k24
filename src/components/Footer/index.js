@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className={styles.footer}>
         <div className={styles.left}>
-            <h2>TRIGGER 2K22</h2>
+            <h2>TRIGGER 2K24</h2>
             <div className={styles.contacts}>
                 <span className={styles.contact}>
                     <p>General Event Manager</p>
@@ -28,7 +28,7 @@ const Footer = () => {
                 { socials.map(social => <a key={social.id} href={social.url}><img alt="icon" src={social.icon}/></a>) }
             </div>
             <div className={styles.copyright}>
-                <p>Copyright &copy; 2022, Association of Computer Technologists</p>
+                <p>Copyright &copy; 2024, Association of Computer Technologists</p>
             </div>
         </div>
         <div className={styles.right}>

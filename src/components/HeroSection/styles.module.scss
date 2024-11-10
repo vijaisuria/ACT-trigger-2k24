@@ -15,11 +15,11 @@
 .hero_section .center_text h1{
     font-size: 6rem;
     line-height: 1;
-    color: var(--color-primary);
+    color: var(--color-accent);
 }
 
 .hero_section .center_text h1 span {
-    color: var(--color-accent);
+    color: var(--color-acc);
 }
 
 .hero_section .center_text h2{
@@ -32,12 +32,15 @@
 
 .hero_section .counter {
     background-color: var(--color-light);
-    border-radius: 2px;
+    border-radius: 4px;
     display: flex;
     align-items: center;
     padding: 1.5rem 2rem;
     gap: 4rem;
     margin-bottom: 2rem;
+    box-shadow: 8px 8px 8px 8px  rgba(167, 179, 203, 0.2); /* Enhanced shadow on hover */
+    transform: translateY(-5px) translateX(-5px); /* Slight lift effect */
+    box-shadow: 8px 8px 8px 8px rgba(134, 108, 168, 0.247);
 }
 
 .hero_section .counter .time {
@@ -47,7 +50,7 @@
 }
 
 .hero_section .counter .time span {
-    color: var(--color-dark);
+    color: #3C0753;
     display: flex;
     flex-direction: column;
     align-items: center;

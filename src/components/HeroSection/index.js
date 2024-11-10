@@ -8,7 +8,7 @@ const HeroSection = (props) => {
     const [timer, setTimer] = React.useState({days: 0, hours: 0, minutes: 0, seconds: 0})
 
     React.useEffect(() => {
-        const i = setInterval(() => calculateTime("November, 26, 2022"), 1000);
+        const i = setInterval(() => calculateTime("November, 15, 2024,5:00 PM"), 1000);
         return () => clearInterval(i);
     }, [])
 
@@ -37,7 +37,7 @@ const HeroSection = (props) => {
                 <h2>Department of Computer Technology, Anna University, MIT Campus</h2>
                 <h2>Association of Computer Technologists</h2>
                 <h2>Presents</h2>
-                <h1>TRIGGER <span>2K22</span></h1>
+                <h1>TRIGGER <span>2K24</span></h1>
             </div>
 
             <div className={styles.counter}>

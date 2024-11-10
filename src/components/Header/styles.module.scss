@@ -53,8 +53,8 @@
 
 .header .links a {
     display: block;
-    color: var(--color-primary);
-    font-size: 1.15rem;
+    color: rgb(141, 155, 186);
+    font-size: 1rem;
     font-weight: 500;
     text-decoration: none;
     transition: all 0.2s var(--animation-ease);
@@ -138,7 +138,9 @@
         bottom: 0;
         padding: 1.5rem;
         margin: 0;
-        background-color: var(--color-white);
+        background: radial-gradient(circle, var(--color-start), var(--color-end));
+        animation: radial-transition 5s infinite alternate;
+        animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
         align-items: center;
         justify-content: center;
         gap: 2rem;
@@ -158,13 +160,17 @@
     
     .header .burger_menu a {
         display: block;
-        color: var(--color-primary);
+        color: rgb(141, 155, 186);
         font-size: 1.5rem;
         font-weight: 500;
         text-decoration: none;
         transition: all 0.2s var(--animation-ease);
         line-height: 1;
     }
+    .header .burger_menu a:hover {
+        color: var(--color-accent);
+    }
+    
 
     .header .logo img {
         height: 55px;
