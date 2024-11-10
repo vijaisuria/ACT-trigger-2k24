@@ -3,7 +3,33 @@
     grid-template-columns: 1fr 1fr;
     padding: 4rem 6rem;
     padding-bottom: 0;
-    background-color: var(--color-white);
+    background: radial-gradient(circle, var(--color-start), var(--color-end));
+    animation: radial-transition 5s infinite alternate;
+    animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+/* Define your colors in :root if not already done */
+:root {
+    --color-start: #3f157e; /* Dark grayish-blue */
+    --color-end: #161B22; /* Light grayish-blue */
+}
+
+@keyframes radial-transition {
+    0% {
+        background-position: 50% 50%;
+    }
+    25% {
+        background-position: 75% 25%;
+    }
+    50% {
+        background-position: 50% 0%;
+    }
+    75% {
+        background-position: 25% 75%;
+    }
+    100% {
+        background-position: 50% 50%;
+    }
 }
 
 .about_section .text {
