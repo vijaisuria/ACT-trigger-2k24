@@ -1,0 +1,198 @@
+.WebTeam_section {
+    padding: 4rem 6rem;
+    padding-bottom: 0;
+}
+
+.WebTeam_section h1 {
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+    line-height: 1;
+    color: var(--color-dark);
+}
+
+.WebTeam_section .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.card {
+    background-color: rgba(232, 234, 237, 0.5);
+    display: flex;
+    flex-direction: column;
+    transition: 0.2s all var(--animation-ease);
+    cursor: pointer;
+    animation: rise 0.6s ease forwards; /* Adds the rise animation */
+    opacity: 0; /* Initial opacity for animation */
+}
+
+@keyframes rise {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Starts slightly below */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Ends at normal position */
+    }
+}
+
+.card:hover {
+    background-color: rgb(138, 108, 158);;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    transform: translateY(-5px) ; /* Slight lift effect */
+    box-shadow: 0 20px 16px rgba(2, 151, 250, 0.1);
+}
+
+.card .body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    flex: 1;
+}
+
+.card .body .tags {
+    display: flex;
+    gap: 1rem;
+}
+
+.card .body .tags span{
+    display: block;
+    font-size: 0.8rem;
+    background-color: rgba(95, 116, 147, 0.2);
+    color: var(--color-black);
+    padding: 0.15rem 1rem;
+    border-radius: 100px;
+    width: fit-content;
+}
+
+.card .body h2 {
+    color: var(--color-bg);
+}
+
+.card .body p {
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: justify;
+    color: var(--color-light);
+}
+
+.card .actions {
+    display: flex;
+    margin-top: auto;
+}
+
+.card .actions button{
+    flex: 1;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 0px;
+    border: none;
+    background: none;
+    color: var(--color-black);
+    color: var(--color-accent);
+    cursor: pointer;
+}
+
+.card .actions button {
+    background-color: rgba(251, 177, 140, 0.2);
+}
+
+.card .actions button:hover {
+    background-color: rgba(251, 177, 140, 0.3);
+}
+
+.card .actions button img {
+    filter: 
+        brightness(0) saturate(100%) invert(66%) sepia(75%) saturate(272%) hue-rotate(329deg) brightness(101%) contrast(97%);
+}
+
+@media only screen and (max-width:780px) {
+    .WebTeam_section {
+        padding: 2rem 1.5rem;
+    }
+
+    .WebTeam_section h1 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .WebTeam_section .grid {
+        grid-template-columns: 1fr;
+    }
+}
+.WebTeam_section {
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 1rem;
+}
+
+.nav_item {
+    background-color: rgba(49, 30, 102, 0.5);
+    border: 1px solid #FFFFFF;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color:#FFFFFF;
+}
+
+.nav_item:hover {
+    background-color: transparent;
+    color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 20px 16px rgba(2, 151, 250, 0.1);
+}
+
+.active {
+    background-color: #684f9a;
+    color: white;
+    font-weight: bold;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.body {
+    margin-bottom: 10px;
+}
+
+.tags {
+    margin: 10px 0;
+}
+
+.actions {
+    text-align: center;
+}
+
+.button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}

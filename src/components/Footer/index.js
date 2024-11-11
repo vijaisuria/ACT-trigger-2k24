@@ -30,6 +30,7 @@ const Footer = () => {
             <div className={styles.copyright}>
                 <p>Copyright &copy; 2024, Association of Computer Technologists</p>
             </div>
+            
         </div>
         <div className={styles.right}>
 
