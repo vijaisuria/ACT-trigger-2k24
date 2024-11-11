@@ -22,26 +22,25 @@
     flex-direction: column;
     transition: 0.2s all var(--animation-ease);
     cursor: pointer;
-    animation: rise 0.6s ease forwards; /* Adds the rise animation */
-    opacity: 0; /* Initial opacity for animation */
+    animation: rise 0.6s ease forwards;
+    opacity: 0;
 }
 
 @keyframes rise {
     0% {
         opacity: 0;
-        transform: translateY(20px); /* Starts slightly below */
+        transform: translateY(20px);
     }
     100% {
         opacity: 1;
-        transform: translateY(0); /* Ends at normal position */
+        transform: translateY(0);
     }
 }
 
 .card:hover {
-    background-color: rgb(138, 108, 158);;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
-    transform: translateY(-5px) ; /* Slight lift effect */
+    background-color: rgb(138, 108, 158);
     box-shadow: 0 20px 16px rgba(2, 151, 250, 0.1);
+    transform: translateY(-5px);
 }
 
 .card .body {
@@ -57,7 +56,7 @@
     gap: 1rem;
 }
 
-.card .body .tags span{
+.card .body .tags span {
     display: block;
     font-size: 0.8rem;
     background-color: rgba(95, 116, 147, 0.2);
@@ -83,7 +82,7 @@
     margin-top: auto;
 }
 
-.card .actions button{
+.card .actions button {
     flex: 1;
     padding: 0.75rem;
     font-size: 1rem;
@@ -104,26 +103,7 @@
 }
 
 .card .actions button img {
-    filter: 
-        brightness(0) saturate(100%) invert(66%) sepia(75%) saturate(272%) hue-rotate(329deg) brightness(101%) contrast(97%);
-}
-
-@media only screen and (max-width:780px) {
-    .events_section {
-        padding: 2rem 1.5rem;
-    }
-
-    .events_section h1 {
-        font-size: 2.5rem;
-        margin-bottom: 2rem;
-    }
-
-    .events_section .grid {
-        grid-template-columns: 1fr;
-    }
-}
-.events_section {
-    padding: 20px;
+    filter: brightness(0) saturate(100%) invert(66%) sepia(75%) saturate(272%) hue-rotate(329deg) brightness(101%) contrast(97%);
 }
 
 .navbar {
@@ -141,15 +121,14 @@
     cursor: pointer;
     border-radius: 4px;
     transition: background-color 0.3s ease, color 0.3s ease;
-    color:#FFFFFF;
+    color: #FFFFFF;
 }
 
 .nav_item:hover {
     background-color: transparent;
     color: white;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
-    transform: translateY(-5px); /* Slight lift effect */
-    box-shadow: 0 20px 16px rgba(2, 151, 250, 0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
 }
 
 .active {
@@ -195,4 +174,59 @@
 
 .button:hover {
     background-color: #0056b3;
+}
+
+@media only screen and (max-width: 780px) {
+    .events_section {
+        padding: 2rem 1.5rem;
+    }
+
+    .events_section h1 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .events_section .grid {
+        grid-template-columns: 1fr; 
+        gap: 1.5rem;
+    }
+
+    .navbar {
+        flex-direction: column; 
+        gap: 1rem;
+    }
+
+    .nav_item {
+        font-size: 1rem; 
+        padding: 8px 16px; 
+    }
+
+    .card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .card .body p {
+        font-size: 0.9rem; 
+    }
+
+    .card .actions button {
+        width: 100%; 
+    }
+
+
+    .card:hover {
+        background-color: rgba(232, 234, 237, 0.5);
+        box-shadow: none;
+        transform: none;
+    }
+
+    .nav_item:hover {
+        box-shadow: none;
+        transform: none;
+    }
+
+    .card .actions button {
+        padding: 12px 20px; 
+    }
 }
