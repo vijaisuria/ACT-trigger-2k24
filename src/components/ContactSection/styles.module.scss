@@ -179,3 +179,8 @@
     margin-bottom: 1rem;
   }
 }
+
+.no-style-link {
+    text-decoration: none !important; /* Removes underline */
+    color: #535c91 !important;        /* Inherits the color from the parent element */
+  }

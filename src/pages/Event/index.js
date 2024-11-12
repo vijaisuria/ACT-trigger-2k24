@@ -4,8 +4,8 @@ import Button from "../../components/Button";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import styles from "./styles.module.scss";
-import SAMPLE_POSTER from "../../assets/Sample Poster.png";
 import { events } from "../../shared/data";
+
 
 const EventPage = (props) => {
   const params = useParams();
@@ -31,24 +31,33 @@ const EventPage = (props) => {
         <div className={styles.left}>
           <h1 className={styles.title}>{event.title}</h1>
           <p className={styles.description}>{event.description}</p>
-          <div className={styles.details}>
-            <span>
-              <p>Team Size</p>
-              <p>{event.teamSize}</p>
-            </span>
-            <span>
-              <p>Venue</p>
-              <p>{event.venue}</p>
-            </span>
-            <span>
-              <p>Schedule</p>
-              <p>{event.schedule}</p>
-            </span>
-            <span>
-              <p>Prize</p>
-              <p>Winner 500 INR & Runner Up 250 INR</p>
-            </span>
-          </div>
+          {event.tags && !event.tags.includes("Workshop") && (
+            <div className={styles.details}>
+              <span>
+                <p>Team Size</p>
+                <p>{event.teamSize}</p>
+              </span>
+              <span>
+                <p>Venue</p>
+                <p>{event.venue}</p>
+              </span>
+              <span>
+                <p>Schedule</p>
+                <p>{event.schedule}</p>
+              </span>
+              <span>
+                <p>Prize</p>
+                {
+                  (event.id != 12 ? (
+                    <p>Winner 500 INR & Runner Up 250 INR</p>
+                  ) : (
+                    <p>Winner 1000 INR & Runner Up 500 INR</p>
+                  ))
+                }
+              </span>
+            </div>
+          )}
+
           <div className={styles.organizers}>
             <p>Organizers Details</p>
             <table>
@@ -74,22 +83,26 @@ const EventPage = (props) => {
               </tbody>
             </table>
           </div>
-          <div className={styles.rules}>
-            <p>Rules</p>
-            <ul>
-              {event.rules.map((rule, idx) => (
-                <li key={idx}>{rule}</li>
-              ))}
-            </ul>
-          </div>
+          {event.rules && event.rules.length > 0 && (
+            <div className={styles.rules}>
+              <p>Rules</p>
+              <ul>
+                {event.rules.map((rule, idx) => (
+                  <li key={idx}>{rule}</li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
         <div className={styles.right}>
-          <img className={styles.poster} src={SAMPLE_POSTER} alt="poster" />
-          <Button
-            type="button"
-            label="Register Now"
-            onClick={() => window.open(event.registrationLink, "_blank")}
-          />
+          <img className={styles.poster} src={event.poster} alt="poster" />
+          {event.registrationLink && (
+            <Button
+              type="button"
+              label="Register Now"
+              onClick={() => window.open(event.registrationLink, "_blank")}
+            />
+          )}
         </div>
       </div>
 

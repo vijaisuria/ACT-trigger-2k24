@@ -26,13 +26,17 @@ const ContactSection = () => {
     EmailJS.init("p9TYtceKgqAHtKs_j");
     const templateParams = {
       from_email: email,
-      to_email: "contact.actmit@gmail.com",
+      to_email: "vijaisurim@gmail.com",
       name: name,
       subject: subject,
       message: message,
     };
 
-    EmailJS.send("service_trigger_website", "template_trigger_query", templateParams)
+    EmailJS.send(
+      "service_trigger_website",
+      "template_trigger_query",
+      templateParams
+    )
       .then(() => {
         setName("");
         setEmail("");
@@ -109,14 +113,23 @@ const ContactSection = () => {
       <div className={styles.left}>
         <div>
           <h1>ANY QUERIES?</h1>
-          <h1>WE ARE HERE</h1>
-          <h1>TO HELP.</h1>
+          <h1>WE ARE HERE TO HELP</h1>
+          <h1>
+            <a
+              href="trigger/team"
+              style={{ textDecoration: "none", color: "#4a47f6" }}
+              className="no-style-link"
+            >
+              MEET THE TEAM
+            </a>
+          </h1>
         </div>
       </div>
       <div className={styles.right}>
         <h2>CONTACT US</h2>
         <p>
-        For any kind of queries related to the event, reach out to us any time by filling the form or contacting the event organizers
+          For any kind of queries related to the event, reach out to us any time
+          by filling the form or contacting the event organizers
         </p>
         <form onSubmit={submit}>
           <div className={styles.col_2}>

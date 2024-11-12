@@ -7,7 +7,7 @@ const EventsSection = () => {
   const navigate = useNavigate();
 
   const [selectedCategory, setSelectedCategory] = useState("Technical");
-  const categories = ["Technical", "Non Technical", "Fun Tech", "Workshop"];
+  const categories = ["Technical", "Fun-Tech", "Workshop"];
 
   const filteredEvents = events.filter((event) =>
     event.tags.includes(selectedCategory)
@@ -61,9 +61,9 @@ const EventsSection = () => {
               <button
                 type="button"
                 className={styles.button}
-                onClick={() => window.open(event.registrationLink, "_blank")}
+                onClick={() => onClick(event.id)}
               >
-                Register Now
+                Know More
               </button>
             </div>
           </div>

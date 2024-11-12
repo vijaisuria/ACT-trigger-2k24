@@ -4,6 +4,7 @@ import HeroSection from "../../components/HeroSection";
 import AboutSection from "../../components/AboutSection";
 import EventsSection from "../../components/EventsSection";
 import ContactSection from "../../components/ContactSection";
+import MegaEvent from "../../components/MegaEvent";
 import Footer from "../../components/Footer";
 
 const LandingPage = (props) => {
@@ -20,7 +21,8 @@ const LandingPage = (props) => {
             <Header showLinks={true}></Header>
             <HeroSection></HeroSection>
             <AboutSection></AboutSection>
-            <EventsSection></EventsSection>    
+            <EventsSection></EventsSection>  
+            <MegaEvent></MegaEvent>  
             <ContactSection></ContactSection>
             <Footer></Footer>
         </React.Fragment>

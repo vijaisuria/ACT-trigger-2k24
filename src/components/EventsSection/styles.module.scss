@@ -1,232 +1,230 @@
 .events_section {
-    padding: 4rem 6rem;
-    padding-bottom: 0;
+  padding: 4rem 6rem;
 }
 
 .events_section h1 {
-    font-size: 3rem;
-    margin-bottom: 2.5rem;
-    line-height: 1;
-    color: var(--color-dark);
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+  line-height: 1;
+  color: var(--color-dark);
 }
 
 .events_section .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
 }
 
 .card {
-    background-color: rgba(232, 234, 237, 0.5);
-    display: flex;
-    flex-direction: column;
-    transition: 0.2s all var(--animation-ease);
-    cursor: pointer;
-    animation: rise 0.6s ease forwards;
-    opacity: 0;
+  background-color: rgba(232, 234, 237, 0.5);
+  display: flex;
+  flex-direction: column;
+  transition: 0.2s all var(--animation-ease);
+  cursor: pointer;
+  animation: rise 0.6s ease forwards;
+  opacity: 0;
 }
 
 @keyframes rise {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .card:hover {
-    background-color: rgb(138, 108, 158);
-    box-shadow: 0 20px 16px rgba(2, 151, 250, 0.1);
-    transform: translateY(-5px);
+  background-color: rgb(138, 108, 158);
+  box-shadow: 0 20px 16px rgba(2, 151, 250, 0.1);
+  transform: translateY(-5px);
 }
 
 .card .body {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem;
-    flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  flex: 1;
 }
 
 .card .body .tags {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .card .body .tags span {
-    display: block;
-    font-size: 0.8rem;
-    background-color: rgba(95, 116, 147, 0.2);
-    color: var(--color-black);
-    padding: 0.15rem 1rem;
-    border-radius: 100px;
-    width: fit-content;
+  display: block;
+  font-size: 0.8rem;
+  background-color: rgba(95, 116, 147, 0.2);
+  color: var(--color-black);
+  padding: 0.15rem 1rem;
+  border-radius: 100px;
+  width: fit-content;
 }
 
 .card .body h2 {
-    color: var(--color-bg);
+  color: var(--color-bg);
 }
 
 .card .body p {
-    font-size: 1rem;
-    font-weight: 300;
-    text-align: justify;
-    color: var(--color-light);
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: justify;
+  color: var(--color-light);
 }
 
 .card .actions {
-    display: flex;
-    margin-top: auto;
+  display: flex;
+  margin-top: auto;
 }
 
 .card .actions button {
-    flex: 1;
-    padding: 0.75rem;
-    font-size: 1rem;
-    border-radius: 0px;
-    border: none;
-    background: none;
-    color: var(--color-black);
-    color: var(--color-accent);
-    cursor: pointer;
+  flex: 1;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 0px;
+  border: none;
+  background: none;
+  color: var(--color-black);
+  color: var(--color-accent);
+  cursor: pointer;
 }
 
 .card .actions button {
-    background-color: rgba(251, 177, 140, 0.2);
+  background-color: rgba(251, 177, 140, 0.2);
 }
 
 .card .actions button:hover {
-    background-color: rgba(251, 177, 140, 0.3);
+  background-color: rgba(251, 177, 140, 0.3);
 }
 
 .card .actions button img {
-    filter: brightness(0) saturate(100%) invert(66%) sepia(75%) saturate(272%) hue-rotate(329deg) brightness(101%) contrast(97%);
+  filter: brightness(0) saturate(100%) invert(66%) sepia(75%) saturate(272%)
+    hue-rotate(329deg) brightness(101%) contrast(97%);
 }
 
 .navbar {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    gap: 1rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 1rem;
 }
 
 .nav_item {
-    background-color: rgba(49, 30, 102, 0.5);
-    border: 1px solid #FFFFFF;
-    padding: 10px 20px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    color: #FFFFFF;
+  background-color: rgba(49, 30, 102, 0.5);
+  border: 1px solid #ffffff;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  color: #ffffff;
 }
 
 .nav_item:hover {
-    background-color: transparent;
-    color: white;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transform: translateY(-5px);
+  background-color: transparent;
+  color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
 }
 
 .active {
-    background-color: #684f9a;
-    color: white;
-    font-weight: bold;
+  background-color: #684f9a;
+  color: white;
+  font-weight: bold;
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
 }
 
 .card {
-    border: 1px solid #eee;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .body {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .tags {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 .actions {
-    text-align: center;
+  text-align: center;
 }
 
 .button {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
 }
 
 .button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 @media only screen and (max-width: 780px) {
-    .events_section {
-        padding: 2rem 1.5rem;
-    }
+  .events_section {
+    padding: 2rem 1.5rem;
+  }
 
-    .events_section h1 {
-        font-size: 2.5rem;
-        margin-bottom: 2rem;
-    }
+  .events_section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
 
-    .events_section .grid {
-        grid-template-columns: 1fr; 
-        gap: 1.5rem;
-    }
+  .events_section .grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
 
-    .navbar {
-        flex-direction: column; 
-        gap: 1rem;
-    }
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+  }
 
-    .nav_item {
-        font-size: 1rem; 
-        padding: 8px 16px; 
-    }
+  .nav_item {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
 
-    .card {
-        width: 100%;
-        box-sizing: border-box;
-    }
+  .card {
+    width: 100%;
+    box-sizing: border-box;
+  }
 
-    .card .body p {
-        font-size: 0.9rem; 
-    }
+  .card .body p {
+    font-size: 0.9rem;
+  }
 
-    .card .actions button {
-        width: 100%; 
-    }
+  .card .actions button {
+    width: 100%;
+  }
 
+  .card:hover {
+    background-color: rgba(232, 234, 237, 0.5);
+    box-shadow: none;
+    transform: none;
+  }
 
-    .card:hover {
-        background-color: rgba(232, 234, 237, 0.5);
-        box-shadow: none;
-        transform: none;
-    }
+  .nav_item:hover {
+    box-shadow: none;
+    transform: none;
+  }
 
-    .nav_item:hover {
-        box-shadow: none;
-        transform: none;
-    }
-
-    .card .actions button {
-        padding: 12px 20px; 
-    }
+  .card .actions button {
+    padding: 12px 20px;
+  }
 }
