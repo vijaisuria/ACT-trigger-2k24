@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/act/static/css/main.799b4bfa.css",
-    "main.js": "/act/static/js/main.df61da44.js",
+    "main.css": "/act/static/css/main.1d8a401f.css",
+    "main.js": "/act/static/js/main.d77d160e.js",
     "static/media/Shark Tank.png": "/act/static/media/Shark Tank.1cd5c6644639a3cc0c29.png",
     "static/media/Connexions.png": "/act/static/media/Connexions.666148bcadc7a24916fc.png",
     "static/media/navin-v1.jpg": "/act/static/media/navin-v1.42f662f57d0d26342fc7.jpg",
@@ -35,11 +35,11 @@
     "static/media/Error.svg": "/act/static/media/Error.26282881583dcc1c3371b0885a1e6df9.svg",
     "static/media/Facebook.svg": "/act/static/media/Facebook.cf8d32afabfca3bad3f0ae7022dcc5ec.svg",
     "static/media/Check.svg": "/act/static/media/Check.a6151888542feae6b5840a95a69ed0b8.svg",
-    "main.799b4bfa.css.map": "/act/static/css/main.799b4bfa.css.map",
-    "main.df61da44.js.map": "/act/static/js/main.df61da44.js.map"
+    "main.1d8a401f.css.map": "/act/static/css/main.1d8a401f.css.map",
+    "main.d77d160e.js.map": "/act/static/js/main.d77d160e.js.map"
   },
   "entrypoints": [
-    "static/css/main.799b4bfa.css",
-    "static/js/main.df61da44.js"
+    "static/css/main.1d8a401f.css",
+    "static/js/main.d77d160e.js"
   ]
 }
