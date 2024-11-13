@@ -129,7 +129,7 @@ const Team = () => {
 
   return (
     <div className={styles.teambody}>
-      {init && (
+      {init && (  
         <Particles
           id="tsparticles"
           particlesLoaded={particlesLoaded}

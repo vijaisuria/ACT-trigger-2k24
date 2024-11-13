@@ -56,6 +56,84 @@ $body-font: "Karla", sans-serif;
   height: auto;
 }
 
+.person {
+  width: calc(25% - 30px);
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.45s;
+  position: relative;
+  &-details {
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-top: -15px;
+    transition: 0.3s;
+  }
+  &-img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+  }
+  &-title {
+    color: #fff;
+    font-size: 2em;
+  }
+  &-desc {
+    color: rgba(#fff, 0.2);
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+  }
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    &:hover {
+      .person {
+        opacity: 0.6;
+      }
+    }
+  }
+  &:hover {
+    opacity: 1 !important;
+  }
+  &:before {
+    position: absolute;
+    left: 20px; /* or any value depending on your needs */
+    top: 20px; /* Adjust top position if necessary */
+    width: 100%; /* Adjust width as per icon size */
+    height: 40px;
+    content: ""; /* Or use an icon here */
+    font-size: 20px; /* Adjust font size for icon */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  &:after {
+    content: "\f2ca";
+    font-family: "Ionicons";
+    font-size: 36px;
+    color: #282828;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    flex-direction: column;
+    z-index: 1000; /* Ensures it's above other content */
+  }
+}
+
 .container-selected {
   .header {
     max-height: 0px;
@@ -280,83 +358,5 @@ $body-font: "Karla", sans-serif;
   }
   .header {
     margin-top: 50px;
-  }
-}
-
-.person {
-  width: calc(25% - 30px);
-  cursor: pointer;
-  overflow: hidden;
-  transition: 0.45s;
-  position: relative;
-  &-details {
-    padding: 0 20px;
-    box-sizing: border-box;
-    margin-top: -15px;
-    transition: 0.3s;
-  }
-  &-img {
-    width: 100%;
-    height: 360px;
-    object-fit: cover;
-  }
-  &-title {
-    color: #fff;
-    font-size: 2em;
-  }
-  &-desc {
-    color: rgba(#fff, 0.2);
-    margin-top: 10px;
-    text-transform: uppercase;
-    font-size: 0.8em;
-    letter-spacing: 2px;
-  }
-  &-list {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-between;
-    &:hover {
-      .person {
-        opacity: 0.6;
-      }
-    }
-  }
-  &:hover {
-    opacity: 1 !important;
-  }
-  &:before {
-    position: absolute;
-    left: 20px; /* or any value depending on your needs */
-    top: 20px; /* Adjust top position if necessary */
-    width: 100%; /* Adjust width as per icon size */
-    height: 40px;
-    content: ""; /* Or use an icon here */
-    font-size: 20px; /* Adjust font size for icon */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-  }
-  &:after {
-    content: "\f2ca";
-    font-family: "Ionicons";
-    font-size: 36px;
-    color: #282828;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    height: 100%;
-    display: flex;
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.3s;
-    text-align: center;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    left: 0;
-    flex-direction: column;
-    z-index: 1000; /* Ensures it's above other content */
   }
 }
