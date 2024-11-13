@@ -12,7 +12,6 @@ const Router = (props) => {
         <Route path="/trigger" element={<LandingPage />} />
         <Route path="/trigger/event/:id" element={<EventPage />} />
         <Route path="/trigger/team" element={<Team />} />
-        <Route path="*" element={<Navigate to="/trigger" />} />
       </Routes>
     </BrowserRouter>
   );
