@@ -1,9 +1,16 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import styles from "./styles.module.scss";
 import PHONE from "../../assets/Phone.svg";
 import { socials, chairman, generalSecretary } from "../../shared/data";
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+  const onClick = () => {
+    navigate(`/trigger/team`);
+  };
+
   return (
     <div className={styles.footer}>
       <div className={styles.left}>
@@ -44,12 +51,12 @@ const Footer = () => {
         <div className={styles.copyright}>
           <p>
             &copy; 2024 ACT. Crafted with ❤️ by the{" "}
-            <a
-              href="trigger/team"
-              style={{ color: "#27257b", fontWeight: "700" }}
+            <span
+              onClick={() => onClick()}
+              style={{ color: "#27257b", fontWeight: "700", cursor: "pointer" }}
             >
               Web Team
-            </a>
+            </span>
             .
           </p>
         </div>

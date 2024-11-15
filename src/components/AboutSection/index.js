@@ -13,7 +13,7 @@ const AboutSection = (props) => {
                 <Button 
                     type="button" 
                     label="Get In Touch" 
-                    onClick={() => window.open("mailto:contact.actmit@gmail.com", "_current")}
+                    onClick={() => window.open("mailto:act@mitindia.com", "_current")}
                 />
             </div>
             <div className={styles.image}>

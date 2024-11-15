@@ -6,7 +6,6 @@ import Footer from "../../components/Footer";
 import styles from "./styles.module.scss";
 import { events } from "../../shared/data";
 
-
 const EventPage = (props) => {
   const params = useParams();
   const event = events.find(
@@ -31,7 +30,7 @@ const EventPage = (props) => {
         <div className={styles.left}>
           <h1 className={styles.title}>{event.title}</h1>
           <p className={styles.description}>{event.description}</p>
-          {event.tags && !event.tags.includes("Workshop") && (
+          {event.tags && (
             <div className={styles.details}>
               <span>
                 <p>Team Size</p>
@@ -46,14 +45,11 @@ const EventPage = (props) => {
                 <p>{event.schedule}</p>
               </span>
               <span>
-                <p>Prize</p>
-                {
-                  (event.id != 12 ? (
-                    <p>Winner 500 INR & Runner Up 250 INR</p>
-                  ) : (
-                    <p>Winner 1000 INR & Runner Up 500 INR</p>
-                  ))
-                }
+                {!event.tags.includes("Workshop") && <p>Prize</p>}
+                {!event.tags.includes("Workshop") && event.id != 12 && (
+                  <p>Winner 500 INR & Runner Up 250 INR</p>
+                )}
+                {event.id == 12 && <p>Winner 1000 INR & Runner Up 500 INR</p>}
               </span>
             </div>
           )}

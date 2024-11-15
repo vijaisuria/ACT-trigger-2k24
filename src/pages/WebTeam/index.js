@@ -3,7 +3,7 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 import styles from "./style.module.scss";
 
-import Vijai from "../../assets/team/Vijai.jpg";
+import Vijai from "../../assets/team/vijaisuria.jpg";
 import Navin from "../../assets/team/navin-v1.jpg";
 import Teje from "../../assets/team/Tejesshree.jpg";
 import Nishika from "../../assets/team/Nishika-v1.jpg";
@@ -18,14 +18,14 @@ const persons = [
       linkedin: "https://www.linkedin.com/in/vijaisuria/",
       github: "https://github.com/vijaisuria",
       portfolio: "https://vijaisuria.github.io/",
-      instagram: ""
+      instagram: "",
     },
   },
   {
     name: "Tejesshree",
     photo: Teje,
     title: "Project Incharge",
-    bio: "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet architecto ea blanditiis quo labore esse magnam illum ut quibusdam. Corrupti ratione iure aliquam adipisci! Harum vitae laboriosam temporibus illo suscipit?</p><p>Saepe repudiandae rerum quam ut perferendis, ullam similique nemo quod, assumenda mollitia consectetur. Eveniet optio maxime perferendis odit possimus? Facilis architecto nesciunt doloribus consectetur culpa veritatis accusamus expedita quos voluptate!</p><p>Nisi provident minus possimus optio voluptate rem, perspiciatis, placeat, culpa aperiam quod temporibus.</p>",
+    bio: "<p> Designed and developed the UI of the ACT Trigger 2024 Website. CSE Undergrad, MIT, Anna University.",
     social: {
       github: "https://github.com/NishikaChellaum",
       linkedin: "https://www.linkedin.com/in/tejesshree-s-4a490a316",
@@ -33,10 +33,10 @@ const persons = [
     },
   },
   {
-    name: "Nishika Chellaum",
+    name: "Nishika",
     photo: Nishika,
     title: "Front-end Developer",
-    bio: "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet architecto ea blanditiis quo labore esse magnam illum ut quibusdam. Corrupti ratione iure aliquam adipisci! Harum vitae laboriosam temporibus illo suscipit?</p><p>Saepe repudiandae rerum quam ut perferendis, ullam similique nemo quod, assumenda mollitia consectetur. Eveniet optio maxime perferendis odit possimus? Facilis architecto nesciunt doloribus consectetur culpa veritatis accusamus expedita quos voluptate!</p><p>Nisi provident minus possimus optio voluptate rem, perspiciatis, placeat, culpa aperiam quod temporibus.</p>",
+    bio: "<p>Contributed to developing the ACT Trigger 2024 website front-end. CSE Undergrad, MIT, Anna University. </p>",
     social: {
       instagram: "https://www.instagram.com/nishika05_26/profilecard",
       github: "https://github.com/NishikaChellaum",
@@ -47,7 +47,7 @@ const persons = [
     name: "Navin",
     photo: Navin,
     title: "Front-end Developer",
-    bio: "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet architecto ea blanditiis quo labore esse magnam illum ut quibusdam. Corrupti ratione iure aliquam adipisci! Harum vitae laboriosam temporibus illo suscipit?</p><p>Saepe repudiandae rerum quam ut perferendis, ullam similique nemo quod, assumenda mollitia consectetur. Eveniet optio maxime perferendis odit possimus? Facilis architecto nesciunt doloribus consectetur culpa veritatis accusamus expedita quos voluptate!</p><p>Nisi provident minus possimus optio voluptate rem, perspiciatis, placeat, culpa aperiam quod temporibus.</p>",
+    bio: "<p>Developed Front-end of the ACT Trigger 2024 Website CSE Undergrad, MIT, Anna University </p>",
     social: {
       github: "https://github.com/Navin1710",
       instagram:
@@ -129,7 +129,7 @@ const Team = () => {
 
   return (
     <div className={styles.teambody}>
-      {init && (  
+      {init && (
         <Particles
           id="tsparticles"
           particlesLoaded={particlesLoaded}

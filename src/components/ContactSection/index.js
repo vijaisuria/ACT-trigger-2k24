@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import EmailJS from "@emailjs/browser";
 import Button from "../Button";
 import styles from "./styles.module.scss";
@@ -6,6 +7,7 @@ import SUCCESS from "../../assets/Check.svg";
 import ERROR from "../../assets/Error.svg";
 
 const ContactSection = () => {
+  const navigate = useNavigate();
   const [name, setName] = React.useState("");
   const [subject, setSubject] = React.useState("");
   const [email, setEmail] = React.useState("");
@@ -18,6 +20,10 @@ const ContactSection = () => {
   });
   const [showAlert, setShowAlert] = React.useState(false);
   const [alertDetails, setAlertDetails] = React.useState({});
+
+  const onClick = () => {
+    navigate(`/trigger/team`);
+  };
 
   const validateEmail = (value) =>
     /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(.\w{2,3})+$/.test(value);
@@ -115,13 +121,13 @@ const ContactSection = () => {
           <h1>ANY QUERIES?</h1>
           <h1>WE ARE HERE TO HELP</h1>
           <h1>
-            <a
-              href="trigger/team"
-              style={{ textDecoration: "none", color: "#4a47f6" }}
+            <span
+              onClick={() => onClick()}
+              style={{ color: "#4a47f6", cursor: "pointer" }}
               className="no-style-link"
             >
               MEET THE TEAM
-            </a>
+            </span>
           </h1>
         </div>
       </div>

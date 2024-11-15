@@ -300,7 +300,11 @@ export const events = [
         mobileNumber: "+91 6381544020",
       },
     ],
-    rules: ["Who can participate: Pre-final year student", "Round 1: Test your coading skill", "Round 2: Mock interview"],
+    rules: [
+      "Who can participate: Pre-final year student",
+      "Round 1: Test your coading skill",
+      "Round 2: Mock interview",
+    ],
     registrationLink: "https://forms.gle/eaagdEdYsAMVZcLq9",
   },
   {
@@ -326,6 +330,45 @@ export const events = [
     rules: [],
     registrationLink:
       "https://gdg.community.dev/events/details/google-gdg-on-campus-madras-institute-of-technology-chennai-india-presents-getting-started-with-github-amp-open-source-contributions/",
+  },
+  {
+    id: 14,
+    title: "Docking deep : Fundamentals of docker",
+    tags: ["Workshop"],
+    teamSize: 1,
+    description:
+      "This workshop will provide a comprehensive introduction to Docker, a powerful platform for developing, shipping, and running applications inside containers. Participants will learn the core concepts behind containerization, how Docker simplifies development workflows, and how to manage containers effectively.",
+    poster: DAVIS,
+    registrationLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSfYAjn8rffOw_SxaSE9OIZ7Wclj3J2OnKCPBik1LjDVacvThA/viewform?usp=send_form",
+    venue: "CB Conference Hall",
+    schedule: "Nov 16 , 9.00 - 12:30PM",
+    organizers: [
+      {
+        name: "JayaPrakash S M",
+        mobileNumber: "+91 93636 96070",
+      },
+    ],
+    Presenter: "Mr. SIVA HARI A S, software engineer, navis",
+  },
+  {
+    id: 15,
+    title: "Elevate entrepreneurial mindset",
+    tags: ["Workshop"],
+    teamSize: 1,
+    description:
+      "This session is designed to inspire and cultivate a growth-oriented entrepreneurial mindset. Participants will explore key traits of successful entrepreneurs, such as resilience, creativity, risk-taking, and problem-solving. The workshop will focus on strategies for overcoming challenges, turning ideas into actionable plans, and building a business-oriented mindset for innovation and success. Through interactive discussions and practical exercises, attendees will learn how to think like entrepreneurs, embrace failure as part of the learning process, and develop the confidence to take bold steps in their ventures.",
+    poster: ENTREPRENEUR,
+    registrationLink: "https://forms.gle/kcFufNqcq7YDfjNc8",
+    venue: "DCL Lab GJ Block",
+    schedule: "Nov 16 , 9.00 - 12:30PM",
+    organizers: [
+      {
+        name: "Kanishka P",
+        mobileNumber: "+91 77086 19770",
+      },
+    ],
+    Presenter: "AUSEC, MIT",
   },
 ];
 
